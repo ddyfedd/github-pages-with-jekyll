@@ -23,13 +23,13 @@ For a step-by-step tutorial it's best to use a numbered list:
 2. Make a draft of the main ideas.
     1. The overal statement/function of the content.
     2. What's neccessary before we begin?
-    3. What are the steps to execute.
-    4. What are the expected results.
+    3. What are the steps to execute?
+    4. What are the expected results?
 3. Content structured this way remains concise and clear.
 4. Create sections for each step for building a task, a Task contains all the substeps needed, as subsections:
     - Use headers,
-    - Strike throughs,
-    - And other formatting to differentiate, or structure.
+    - Horizontal rules,
+    - And other formatting to differentiate, or structure the content.
 
 ## Using code examples
 
@@ -39,9 +39,13 @@ This example shows the content in this source file: [GitHub](https://github.com/
 
 When you use a tool like [Swagger.io](https://editor.swagger.io/) to edit your OpenAPI reference file, link above, you can run test codes in the connected OpenWeatherMap API endpoint (in this case on the `weather` endpoint).[^1]
 
-[^1]: This requires that you have your own API key for using OpenWeatherMap API, you can get your key at: [https://home.openweathermap.org/users/sign_up](https://home.openweathermap.org/users/sign_up). After registering you can access your API key for authorizing your requests.
+[^1]: This requires that you have your own API key for using OpenWeatherMap API, you can get your key at: <https://home.openweathermap.org/users/sign_up>. After registering you can access your API key for authorizing your requests.
 
 ### Create a code sample
+
+There are several ways to get a code snipet for your documentation, here are the steps using an OpenAPI specification written in YAML combined with Swagger[^2]:
+
+[^2]: This example is made by writing the linked YAML content in Swagger's text editor.
 
 1. Click on the __[Authorization]__ button.
 2. Enter your API key on the Authorization panel, then press __[Login]__. Now you can run requests with the parameters.
@@ -52,11 +56,11 @@ When you use a tool like [Swagger.io](https://editor.swagger.io/) to edit your O
 4. The response is shown below, you get:
     - A cURL link, you can run in your command prompt:
         ```sh
-        curl -X GET "https://api.openweathermap.org/data/2.5/weather?id=2172797&units=metric&lang=en&mode=json&appid=28b65445b450b0b2c829b7184796ec01" -H  "accept: application/json"
+        curl -X GET "https://api.openweathermap.org/data/2.5/weather?id=2172797&units=metric&lang=en&mode=json&appid={API-key}" -H  "accept: application/json"
         ```
     - A basic request URL:
         ```http
-        https://api.openweathermap.org/data/2.5/weather?id=2172797&units=metric&lang=en&mode=json&appid=28b65445b450b0b2c829b7184796ec01
+        https://api.openweathermap.org/data/2.5/weather?id=2172797&units=metric&lang=en&mode=json&appid={API-key}
         ```
     - And the response of the API, in the choosen format (default: `json`):
         ```json
