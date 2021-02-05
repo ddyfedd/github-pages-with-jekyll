@@ -39,7 +39,7 @@ This example shows the content in this source file: [GitHub](https://github.com/
 
 When you use a tool like [Swagger.io](https://editor.swagger.io/) to edit your OpenAPI reference file, link above, you can run test codes in the connected OpenWeatherMap API endpoint (in this case on the `weather` endpoint).[^1]
 
-[^1]: This requires that you have your own API key for using OpenWeatherMap API, you can get your key at: (https://home.openweathermap.org/users/sign_up). After registering you can access your API key for authorizing your requests.
+[^1]: This requires that you have your own API key for using OpenWeatherMap API, you can get your key at: [https://home.openweathermap.org/users/sign_up](https://home.openweathermap.org/users/sign_up). After registering you can access your API key for authorizing your requests.
 
 ### Create a code sample
 
